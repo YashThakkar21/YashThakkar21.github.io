@@ -41,7 +41,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -113,8 +113,10 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  Email is the fastest way to reach me — always happy to talk about RL, LLM reasoning,
-  distributed systems, or teaching CS.
+  Email is the fastest way to reach me. For school and research, use
+  <a href="mailto:yt5693@princeton.edu">yt5693@princeton.edu</a>; for everything else,
+  <a href="mailto:yashthakkar2104@gmail.com">yashthakkar2104@gmail.com</a>. Always happy to
+  talk about RL, LLM reasoning, distributed systems, or teaching CS.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

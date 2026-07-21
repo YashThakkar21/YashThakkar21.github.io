@@ -6,15 +6,13 @@
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
           {% if site.title == 'blank' %}
             {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
+              <span class="font-weight-bold">{{ site.first_name }}</span>
             {% endif %}
             {% if site.middle_name %}
-              {{- site.middle_name -}}
+              <span class="font-weight-bold">{{ site.middle_name }}</span>
             {% endif %}
             {% if site.last_name %}
-              {{- site.last_name -}}
+              <span class="font-weight-bold">{{ site.last_name }}</span>
             {% endif %}
           {% else %}
             {{- site.title -}}
@@ -120,7 +118,8 @@
             <!-- Toogle theme mode -->
             <li class="toggle-container">
               <button id="light-toggle" title="Change theme">
-                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
+                <!-- System theme mode removed; only light and dark remain. -->
+                <!-- <i class="ti ti-sun-moon" id="light-toggle-system"></i> -->
                 <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
                 <i class="ti ti-sun-filled" id="light-toggle-light"></i>
               </button>

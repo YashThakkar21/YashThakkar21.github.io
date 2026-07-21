@@ -3,7 +3,6 @@
 
 @techreport{thakkar2026judgement,
   abbr={RL},
-  bibtex_show={true},
   title={Multi-Agent Reinforcement Learning for Imperfect-Information Games},
   author={Thakkar, Yash},
   institution={Princeton University},
@@ -12,13 +11,13 @@
   abstract={Judgment is a trick-taking card game in which players must bid the exact number of tricks they will win before play begins, under partial observability of all other hands. We train agents with a multi-agent self-play loop using PPO with action masking over the legal move set and belief-state features derived from bidding behavior and observed play. The resulting agents surpass experienced human players and develop emergent bidding strategies, including deliberately conservative bids that constrain opponents' targets, learned directly from raw game states without hand-engineered heuristics.},
   keywords={reinforcement learning, multi-agent, self-play, PPO, imperfect information},
   code={https://github.com/YashThakkar21/judgement-rl},
+  overview={/projects/judgement-rl/},
   pdf={https://drive.google.com/file/d/1xBYyfL6GBJPuadDg3msNEah1upDYd1tP/view?usp=sharing},
   selected={true}
 }
 
 @techreport{thakkar2026tot,
   abbr={LLM},
-  bibtex_show={true},
   title={A Smarter Search for Tree of Thoughts},
   author={Thakkar, Yash},
   institution={Princeton University},
@@ -27,42 +26,43 @@
   abstract={Tree of Thoughts (ToT) explores a tree of intermediate reasoning steps but searches it with uninformed BFS or DFS. We replace this with two informed search strategies: A* using a lazily evaluated LLM-scored heuristic, which avoids scoring every frontier node given the cost of each model call, and Monte Carlo Tree Search with UCT exploration using the LLM as a leaf value estimator. Benchmarking against BFS/DFS baselines on Game of 24 and crossword tasks, we find that gains from search are bounded by evaluator calibration: MCTS outperforms BFS only when state evaluations are reliable, and poorly calibrated evaluators cause informed search to amplify rather than correct their errors.},
   keywords={large language models, reasoning, tree search, MCTS, A*},
   code={https://github.com/YashThakkar21/smarter-search-for-tree-of-thoughts},
+  overview={/projects/tree-of-thoughts-search/},
   pdf={https://drive.google.com/file/d/1LqR2tY1I4ndmFvawkI0gjoOPjsv9bUo7/view?usp=sharing},
   selected={true}
 }
 
 @techreport{thakkar2025semantic,
   abbr={LLM},
-  bibtex_show={true},
   title={Semantic Reasoning Evaluation in Large Language Models},
   author={Thakkar, Yash},
   institution={Princeton University},
   year={2025},
   month={dec},
-  abstract={When a code model correctly describes a function named binary_search, it is unclear whether it traced the program's logic or read its identifier. We construct synthetic datasets that hold program semantics fixed while varying surface form, and evaluate Qwen2.5-Coder-32B under identifier-obfuscation and injected-error ablations using an LLM-as-a-judge protocol for free-form output. The model preserves intent under obfuscation, indicating its understanding is not purely lexical, but fails at multi-step error localization: accuracy degrades sharply as the number of reasoning steps between an injected fault and its observable effect grows.},
+  abstract={When a code model correctly describes a function named binary_search, it is unclear whether it traced the program's logic or read its identifier. I construct synthetic datasets that hold program semantics fixed while varying surface form, and evaluate Qwen2.5-Coder-32B under identifier-obfuscation and injected-error ablations using an LLM-as-a-judge protocol for free-form output. The model preserves intent under obfuscation, indicating its understanding is not purely lexical, but fails at multi-step error localization: accuracy degrades sharply as the number of reasoning steps between an injected fault and its observable effect grows.},
   keywords={large language models, code understanding, evaluation, LLM-as-a-judge},
   code={https://github.com/YashThakkar21/llm-semantic-reasoning-evaluation},
+  overview={/projects/llm-semantic-reasoning/},
   pdf={https://drive.google.com/file/d/1Dv7dyQ8Gn4GhO2I7vKpTKfy15nOibzOd/view?usp=sharing},
   selected={true}
 }
 
 @techreport{thakkar2026drone,
   abbr={Robotics},
-  bibtex_show={true},
   title={A Low-Cost Open-Source Platform for Autonomous Drone Payload Delivery},
   author={Thakkar, Yash},
   institution={Princeton University},
   year={2026},
   month={may},
-  abstract={Commercial drone delivery hardware is expensive and closed. We present an open-source autonomous payload-drop system built from commodity components: an Arduino control board, an ultrasonic rangefinder for above-ground-level release triggering, and 3D-printed release mechanisms with a published CAD parts library. Across seven design revisions driven by failure analysis of servo torque, rotor-downwash sensor noise, and mechanical binding, the final design achieves 84% bench and 80% in-flight release reliability, with the remaining gap attributable to vibration-induced sensor noise absent under static testing.},
+  abstract={Commercial drone delivery hardware is expensive and closed. I present an open-source autonomous payload-drop system built from commodity components: an Arduino control board, an ultrasonic rangefinder for above-ground-level release triggering, and 3D-printed release mechanisms with a published CAD parts library. Across seven design revisions driven by failure analysis of servo torque, rotor-downwash sensor noise, and mechanical binding, the final design achieves 84% bench and 80% in-flight release reliability, with the remaining gap attributable to vibration-induced sensor noise absent under static testing.},
   keywords={robotics, drones, embedded systems, mechanical design},
   code={https://github.com/YashThakkar21/low-cost-drone-delivery-platform},
-  pdf={https://drive.google.com/file/d/1xV5i5eZY8M6mFdPZU48OJArCQH-7nCON/view?usp=sharing}
+  overview={/projects/drone-delivery/},
+  pdf={https://drive.google.com/file/d/1xV5i5eZY8M6mFdPZU48OJArCQH-7nCON/view?usp=sharing},
+  selected={true}
 }
 
 @techreport{thakkar2025pedestrian,
   abbr={CV},
-  bibtex_show={true},
   title={Benchmarking Classical and Foundation-Model Pipelines for Pedestrian Detection},
   author={Thakkar, Yash and Bhatia, S.},
   institution={Princeton University},
@@ -71,5 +71,6 @@
   abstract={Pedestrian detection methods spanning four decades are rarely compared under identical conditions. We benchmark HOG, CNN, ViT, and SAM2 pipelines on the PnPLO pedestrian dataset with fixed data, splits, and evaluation protocol. Foundation-model pipelines lead on detection quality, particularly for occluded and small-scale pedestrians where hand-engineered gradient features degrade, but incur inference costs orders of magnitude higher, which is the binding constraint for the embedded real-time settings where pedestrian detection is deployed. HOG remains competitive on clean, unoccluded instances at a fraction of the compute.},
   keywords={computer vision, object detection, benchmarking, vision transformers},
   code={https://github.com/s-bhatia1216/pedestrian-detection},
+  overview={/projects/pedestrian-detection/},
   pdf={https://drive.google.com/file/d/1ARuDzLRI2P5gvrx-hfGsxX9vOVDj-0Ht/view?usp=sharing}
 }

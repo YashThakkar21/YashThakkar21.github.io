@@ -40,13 +40,25 @@
         - Designed state-diffing and TTL algorithms via Spanner management APIs, cutting storage overhead.
         - Built real-time Streamz alerting with time-series monitoring, improving overall data-store reliability.
 
+    - title: Undergraduate Researcher, Princeton Reinforcement Learning Lab
+      institution: Princeton University
+      year: Apr 2026 - Present
+      description:
+        - Research on reinforcement learning and decision-making, advised by Prof. Ben Eysenbach and Mahsa Bastankhah.
+
     - title: Head Teaching Assistant
       institution: Princeton University, Department of Computer Science
-      year: Sep 2025 - Present
+      year: Dec 2025 - Present
       description:
         - Lead TA operations across three introductory CS courses, supporting 300+ students per semester in Java and C.
-        - Mentor students on data structures, systems programming, and debugging; teach core CS concepts.
-        - Built TigerHelp, a Next.js/PostgreSQL office-hours platform with an SSE live queue, CAS auth, and a TA analytics view.
+        - Coordinate staffing, logistics, and instruction quality across course staff; mentor students on data structures, systems programming, and debugging.
+        - Building TigerHelp, a Next.js/PostgreSQL office-hours platform with an SSE live queue, CAS auth, and a TA analytics view.
+
+    - title: Teaching Assistant
+      institution: Princeton University, Department of Computer Science
+      year: Sep 2025 - Dec 2025
+      description:
+        - Supported introductory CS courses in Java and C, running office hours, grading, and student mentoring before being promoted to Head TA.
 
     - title: Software Engineer Intern
       institution: LinkedIn, Mountain View, CA
@@ -123,7 +135,7 @@
 - title: Teaching
   type: list
   contents:
-    - <b>Head Teaching Assistant</b>, Princeton University Computer Science — introductory CS sequence in Java and C, 300+ students per semester, Sep 2025 - Present.
+    - <b>Head Teaching Assistant</b> (Dec 2025 - Present), Princeton University Computer Science. Introductory CS sequence in Java and C, 300+ students per semester. Teaching Assistant Sep 2025 to Dec 2025.
 
 - title: Interests
   type: list
