@@ -1,0 +1,131 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Yash Thakkar
+    - name: Location
+      value: Princeton, NJ
+    - name: Email
+      value: <a href="mailto:yt5693@princeton.edu">yt5693@princeton.edu</a>
+    - name: Languages
+      value: English, Hindi, Gujarati
+
+- title: Education
+  type: time_table
+  contents:
+    - title: B.S. in Computer Science
+      institution: Princeton University, Princeton, NJ
+      year: Expected May 2027
+      description:
+        - Minors in Mathematics and Robotics
+        - title: Relevant coursework
+          contents:
+            - Distributed Systems, Operating Systems, Advanced Programming Techniques
+            - Reinforcement Learning, Machine Learning, Computer Vision
+            - Algorithms & Data Structures, Probability
+            - Robotics (Drone Lab)
+        - title: Extracurricular
+          contents:
+            - AI @ Princeton, HackPrinceton, TigerApps
+            - Princeton ACM, Robotics Club, CodePath
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Software Engineer Intern
+      institution: Google, Mountain View, CA
+      year: May 2026 - Present
+      description:
+        - Built a C++ service detecting orphaned Spanner databases across petabyte-scale Google Workspace recovery workflows.
+        - Designed state-diffing and TTL algorithms via Spanner management APIs, cutting storage overhead.
+        - Built real-time Streamz alerting with time-series monitoring, improving overall data-store reliability.
+
+    - title: Head Teaching Assistant
+      institution: Princeton University, Department of Computer Science
+      year: Sep 2025 - Present
+      description:
+        - Lead TA operations across three introductory CS courses, supporting 300+ students per semester in Java and C.
+        - Mentor students on data structures, systems programming, and debugging; teach core CS concepts.
+        - Built TigerHelp, a Next.js/PostgreSQL office-hours platform with an SSE live queue, CAS auth, and a TA analytics view.
+
+    - title: Software Engineer Intern
+      institution: LinkedIn, Mountain View, CA
+      year: May 2025 - Aug 2025
+      description:
+        - Engineered an AI recruiting agent via an MCP server, automating 12 workflows and boosting recruiter task speed by 6x.
+        - Built an AI agent backend feature with Lucene search in Python and Java, improving candidate evaluation relevance by 12%.
+        - Developed a TTL-based termination system for large-scale LLM workflows, cutting wasted compute by 30%.
+
+    - title: Software Engineer Intern
+      institution: Fidelity Investments, Durham, NC
+      year: Jun 2024 - Aug 2024
+      description:
+        - Developed a JavaScript web app analyzing cloud workflow portability, informing decisions for 25+ teams.
+        - Integrated Claude 3.5 with AWS Bedrock to automate architecture reviews, improving efficiency by 40%.
+        - Engineered a knowledge base for embedding and RAG, increasing model accuracy by 75%.
+
+    - title: Software Engineer Intern
+      institution: NoTraffic, Tel Aviv, Israel
+      year: Jun 2023 - Aug 2023
+      description:
+        - Created an AI-based accident detection MVP using Django and Angular, deployed to 150+ traffic intersections.
+        - Devised a Python pipeline with ML and OpenCV to sync 4 video streams, increasing accident detection by 35%.
+
+- title: Research
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/YashThakkar21/judgement-rl">Multi-Agent RL for Imperfect-Information Games</a>
+      year: Spring 2026
+      description:
+        - Built a multi-agent self-play loop with PPO, action masking, and belief-state features for partial observability.
+        - Surpassed experienced human players, developing complex emergent bidding strategies directly from raw game states.
+
+    - title: <a href="https://github.com/YashThakkar21/smarter-search-for-tree-of-thoughts">A Smarter Search for Tree of Thoughts</a>
+      year: Spring 2026
+      description:
+        - Co-authored a paper replacing Tree-of-Thoughts' BFS/DFS with A* (lazy LLM-scored heuristic) and MCTS with UCT exploration.
+        - Found that evaluator calibration bounds search gains; MCTS beat BFS only when state evaluations were reliable.
+
+    - title: <a href="https://github.com/YashThakkar21/llm-semantic-reasoning-evaluation">Semantic Reasoning Evaluation in LLMs</a>
+      year: Fall 2025
+      description:
+        - Generated synthetic datasets to evaluate Qwen2.5-Coder-32B's semantic reasoning via obfuscation and error-detection ablations.
+        - Implemented an LLM-as-a-judge pipeline, showing the model preserves intent but fails at multi-step error localization.
+
+- title: Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/YashThakkar21/low-cost-drone-delivery-platform">Low-Cost Drone Delivery Platform</a>
+      year: Spring 2026
+      description:
+        - Designed an open-source autonomous payload-drop system with ultrasonic ground detection and 3D-printed mechanisms.
+        - Iterated across 7 designs to reach 84% bench and 80% flight release reliability.
+
+    - title: <a href="https://github.com/s-bhatia1216/pedestrian-detection">Pedestrian Detection Benchmark</a>
+      year: Fall 2025
+      description:
+        - Benchmarked HOG, CNN, ViT, and SAM2 pipelines on the PnPLO pedestrian dataset.
+        - Compared accuracy-latency tradeoffs across classical and foundation-model approaches.
+
+    - title: <a href="https://github.com/YashThakkar21/TigerPool">TigerPool</a>
+      year: 2025
+      description:
+        - Full-stack ridesharing platform for Princeton students built with React, Flask, and PostgreSQL.
+        - Used the Google Maps API for real-time route optimization and ETA prediction.
+
+- title: Technical Skills
+  type: list
+  contents:
+    - <b>Languages:</b> Python, C++, JavaScript, Java, C, Swift, SQL (PostgreSQL, MySQL), R, HTML/CSS, Assembly
+    - <b>Libraries & Frameworks:</b> PyTorch, TensorFlow, Scikit-learn, FastMCP, React, Next.js, OpenAI, OpenCV, Flask, Node.js, Kafka
+    - <b>Developer Tools:</b> CUDA, Git, MLflow, Claude Code, Docker, Kubernetes, AWS, CI/CD, Spanner
+
+- title: Teaching
+  type: list
+  contents:
+    - <b>Head Teaching Assistant</b>, Princeton University Computer Science — introductory CS sequence in Java and C, 300+ students per semester, Sep 2025 - Present.
+
+- title: Interests
+  type: list
+  contents:
+    - Reinforcement learning, LLM reasoning and evaluation, distributed systems, robotics and drones, computer vision, and CS education.

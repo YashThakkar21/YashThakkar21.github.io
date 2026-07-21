@@ -1,0 +1,277 @@
+%-------------------------
+% Resume in Latex
+% Author : Yash Thakkar
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[hidelinks]{hyperref}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=blue,
+    citecolor=blue
+}
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+% \titleformat{\section}{
+%   \vspace{-4pt}\scshape\raggedright\large\bfseries
+% }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt, topsep=2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Yash Thakkar} \\ \vspace{1pt}
+\small yt5693@princeton.edu ~ linkedin.com/in/yash-thakkar21 ~ github.com/YashThakkar21
+\vspace{-8pt}
+
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Princeton University}{Expected May 2027}
+      {Bachelor of Science in \textbf{Computer Science}, Minors in Math and Robotics}{Princeton, NJ}
+      \resumeItemListStart
+      \vspace{2pt}
+        \resumeItem{\textbf{Relevant Coursework:} Distributed Systems, Reinforcement Learning, Algorithms \& Data Structures, Machine Learning, Advanced Programming Techniques, Computer Vision, Robotics (Drone Lab), Probability, Operating Systems.}
+        \resumeItem{\textbf{Extracurricular:} AI @ Princeton, HackPrinceton, TigerApps, Princeton ACM, Robotics Club, CodePath.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\vspace{-10pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+  {Google}{May 2026 -- Present}
+  {Software Engineer Intern}{Mountain View, CA}
+  \resumeItemListStart
+        \vspace{2pt}
+    \resumeItem{Built a \textbf{C++} service detecting orphaned \textbf{Spanner} databases on petabyte-scale Google Workspace recovery workflows.}
+    \resumeItem{Designed state-diffing \& TTL algorithms via Spanner management APIs, cutting storage overhead.}
+    \resumeItem{Built real-time \textbf{Streamz} alerting with time-series monitoring, improving overall data-store reliability.}
+  \resumeItemListEnd
+
+    \resumeSubheading
+      {Princeton University Computer Science}{September 2025 -- Present}
+      {Head Teaching Assistant}{Princeton, NJ}
+      \resumeItemListStart
+              \vspace{2pt}
+        \resumeItem{Lead TA operations across three intro CS courses, supporting \textbf{300+ students per semester} in \textbf{Java} and \textbf{C}.}
+        \resumeItem{Mentor students on \textbf{data structures}, \textbf{systems programming}, debugging code, and teach core CS concepts.}
+        \resumeItem{Built TigerHelp, a \textbf{Next.js/PostgreSQL} office-hours platform with SSE live queue, CAS auth, \& TA analytics view.}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {LinkedIn}{May 2025 -- August 2025}
+      {Software Engineer Intern}{Mountain View, CA}
+      \resumeItemListStart
+      \vspace{2pt}
+        \resumeItem{Engineered an AI recruiting agent via \textbf{MCP server}, automating 12 workflows and boosting recruiter task speed by 6x.}
+        \resumeItem{Built AI Agent backend feature with Lucene search using \textbf{Python} and \textbf{Java}, boosting candidate eval relevance by 12\%.}
+        \resumeItem{Developed \textbf{TTL-based termination system} for large-scale LLM workflows, cutting wasted compute by 30\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Fidelity Investments}{June 2024 -- August 2024}
+      {Software Engineer Intern}{Durham, NC}
+      \resumeItemListStart
+      \vspace{2pt}
+        \resumeItem{Developed a web app using \textbf{JavaScript} to analyze cloud workflow portability, enhancing decisions for 25+ teams.}
+        \resumeItem{Integrated \textbf{Claude 3.5 LLM} with \textbf{AWS} Bedrock to automate architecture reviews, improving efficiency by 40\%.}
+        \resumeItem{Engineered a comprehensive knowledge base for embedding and RAG, increasing model accuracy by 75\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {NoTraffic}{June 2023 -- August 2023}
+      {Software Engineer Intern}{Tel Aviv, Israel}
+      \resumeItemListStart
+      \vspace{2pt}
+        \resumeItem{Created an AI-based accident detection MVP using \textbf{Django-Angular}, deployed to 150+ traffic intersections.}
+        \resumeItem{Devised a \textbf{Python} script with \textbf{ML} and \textbf{OpenCV} to sync 4 video streams, increasing accident detection by 35\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\vspace{-10pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+ \vspace{-2pt}
+    \small{\item{
+     \textbf{Languages}{: Python, C++, JavaScript, Java, C, Swift, HTML/CSS, SQL, R, Assembly, PostgreSQL, MySQL.} \\
+     \textbf{Libraries/Frameworks}{: PyTorch, TensorFlow, Scikit-learn, FastMCP, React, OpenAI, OpenCV, Flask, Node.js, Kafka}. \\
+     \textbf{Developer Tools}{: CUDA, Git, MLFlow, Claude Code, Docker, Kubernetes, AWS, CI/CD, Spanner.} \\
+    }}
+ \end{itemize}
+
+\vspace{-10pt}
+
+\section{Research}
+  \resumeSubHeadingListStart
+  \vspace{-6pt}
+    \resumeProjectHeading
+      {\textbf{Multi-Agent RL for Imperfect-Information Games} $|$ \emph{Python, PyTorch} $|$ \href{https://github.com/YashThakkar21/judgement-rl}{\underline{GitHub}} $|$ \href{https://drive.google.com/file/d/1xBYyfL6GBJPuadDg3msNEah1upDYd1tP/view?usp=sharing}{\underline{Paper}}}{Spring 2026}
+      \resumeItemListStart
+      \vspace{2pt}
+        \resumeItem{Built a multi-agent \textbf{self-play} loop with \textbf{PPO}, action masking, and belief-state features for partial observability.}
+        \resumeItem{Surpassed experienced human players, developing complex, emergent bidding strategies directly from raw game states.}
+      \resumeItemListEnd
+      \vspace{-14pt}
+    \resumeProjectHeading
+      {\textbf{A Smarter Search for Tree of Thoughts} $|$ \emph{Python, GPT-4 API} $|$ \href{https://github.com/YashThakkar21/smarter-search-for-tree-of-thoughts}{\underline{GitHub}} $|$ \href{https://drive.google.com/file/d/1LqR2tY1I4ndmFvawkI0gjoOPjsv9bUo7/view?usp=sharing}{\underline{Paper}}}{Spring 2026}
+      \resumeItemListStart
+      \vspace{2pt}
+        \resumeItem{Co-authored paper replacing ToT's BFS/DFS with \textbf{A*} (lazy LLM-scored heuristic) and \textbf{MCTS} with UCT exploration.}
+        \resumeItem{Found evaluator calibration bounds search gains; MCTS beat BFS only when state evaluations were reliable.}
+      \resumeItemListEnd
+        \vspace{-14pt}
+    \resumeProjectHeading {\textbf{Semantic Reasoning Evaluation in LLMs} $|$ \emph{PyTorch, Qwen2.5-Coder-32B, HuggingFace} $|$ \href{https://github.com/YashThakkar21/llm-semantic-reasoning-evaluation}{\underline{GitHub}} $|$ \href{https://drive.google.com/file/d/1Dv7dyQ8Gn4GhO2I7vKpTKfy15nOibzOd/view?usp=sharing}{\underline{Paper}}}{Fall 2025}
+    \resumeItemListStart
+    \vspace{2pt}
+      \resumeItem{Generated \textbf{synthetic datasets} to evaluate \textbf{Qwen's} semantic reasoning via obfuscation and error-detection ablations.}
+      \resumeItem{Implemented an \textbf{LLM-as-a-judge}, proving the model preserves intent but fails at \textbf{multi-step error localization}.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\vspace{-10pt}
+
+\section{Projects}
+  \resumeSubHeadingListStart
+  \vspace{-6pt}
+
+    \resumeProjectHeading
+      {\textbf{Low-Cost Drone Delivery Platform} $|$ \emph{C++, Arduino, CAD} $|$ \href{https://github.com/YashThakkar21/low-cost-drone-delivery-platform}{\underline{GitHub}} $|$ \href{https://drive.google.com/file/d/1xV5i5eZY8M6mFdPZU48OJArCQH-7nCON/view?usp=sharing}{\underline{Paper}}}{Spring 2026}
+      \resumeItemListStart
+      \vspace{2pt}
+        \resumeItem{Designed an open-source autonomous payload-drop system (ultrasonic ground detection, 3D-printed mechanisms); iterated across 7 designs to reach \textbf{84\% bench} / \textbf{80\% flight} release reliability.}
+      \resumeItemListEnd
+      \vspace{-14pt}
+    \resumeProjectHeading
+      {\textbf{Pedestrian Detection Benchmark} $|$ \emph{Python, PyTorch} $|$ \href{https://github.com/s-bhatia1216/pedestrian-detection}{\underline{GitHub}} $|$ \href{https://drive.google.com/file/d/1ARuDzLRI2P5gvrx-hfGsxX9vOVDj-0Ht/view?usp=sharing}{\underline{Paper}}}{Fall 2025}
+      \resumeItemListStart
+      \vspace{2pt}
+        \resumeItem{Benchmarked \textbf{HOG, CNN, ViT, and SAM2} pipelines on the PnPLO pedestrian dataset, comparing accuracy--latency tradeoffs across classical and foundation-model approaches.}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+\end{document}

@@ -1,0 +1,6 @@
+# Map coauthor last names to their homepages so jekyll-scholar can link them.
+# Example:
+#
+# "bhatia":
+#   - firstname: ["S.", "Simar"]
+#     url: https://example.com
